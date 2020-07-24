@@ -27,6 +27,8 @@ contains all the environment variables required for the application.  Currently 
 
 This value is where you put the relative address of the api.
 
+` echo BASE_ADDRESS=http://localhost:5000/api > .env` 
+
 In order to start this application you need to run:
 
 `npm install` 
