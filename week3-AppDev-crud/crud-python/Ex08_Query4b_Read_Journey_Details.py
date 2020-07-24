@@ -6,7 +6,7 @@ print('========================================')
 print('Start exercise')
 
 spacecraft_name = 'Crew Dragon Endeavour,SpaceX'
-journey_id      = uuid.UUID('230995ee-c697-11ea-b7a1-8c85907c08dd')
+journey_id      = uuid.UUID('f72182dc-cdd4-11ea-9a51-94b86d0d21d0')
 
 try:
     connection = Connection()
@@ -15,16 +15,16 @@ try:
         [spacecraft_name, journey_id]
     )
     for row in output:
-       print('Journey has been found')
-       print('- Uid:\t\t ', row.journey_id);
-       print('- Spacecraft:\t', row.spacecraft_name);
-       print('- Summary:\t', row.summary);
-       print('- Active:\t', row.active);
-       print('- Takeoff:\t', row.start);
-       print('- Landing:\t', row.end);
+        print('Journey has been found')
+        print('- Uid:\t\t ', row.journey_id);
+        print('- Spacecraft:\t', row.spacecraft_name);
+        print('- Summary:\t', row.summary);
+        print('- Active:\t', row.active);
+        print('- Takeoff:\t', row.start);
+        print('- Landing:\t', row.end);
 except Exception as e: 
     print(e)
-    print('Failure')
+    print('Failure of connection')
 else:
 
     print('Success')

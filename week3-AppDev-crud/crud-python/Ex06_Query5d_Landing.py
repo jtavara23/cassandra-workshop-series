@@ -3,7 +3,7 @@ from db_connection import Connection
 import datetime
 import uuid
 #Defining our journey
-journey_id = uuid.UUID('df8d5c9c-c696-11ea-a8a1-a6cacf7cb1a0')
+journey_id = uuid.UUID('f72182dc-cdd4-11ea-9a51-94b86d0d21d0')
 spacecraft_name = 'Crew Dragon Endeavour,SpaceX'
 print("========================================")
 print("Start exercise")

@@ -3,13 +3,10 @@ from cassandra.cluster import Cluster
 from cassandra.auth import PlainTextAuthProvider
 
 # This is the Zip file you downloaded
-SECURE_CONNECT_BUNDLE = '/Users/cedricklunven/Downloads/secure-connect-devworkshopdb.zip'
-# This is the username, recommended value was KVUser
-USERNAME = "todouser";
-# This is the password, recommended value was KVPassword
-PASSWORD = "todopassword";
-# This is the keyspace name, recommended value was killrvideo
-KEYSPACE = "todoapp"; 
+SECURE_CONNECT_BUNDLE = 'D:/Online-Courses/Astra_datastax/secure-connect-kvpassword.zip'
+USERNAME = "KVUser";
+PASSWORD = "KVPassword";
+KEYSPACE = "killrvideo"; 
 
 class Connection:
     def __init__(self):
